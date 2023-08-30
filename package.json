@@ -1,13 +1,17 @@
 {
   "name": "jade-npm-components-package",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name jade-npm-components-package -dest lib plugins/index.js",
     "lint": "vue-cli-service lint"
   },
+  "keywords": ["dateTime"],
+  "main": "dist/jade-npm-components-package.umd.min.js",
   "dependencies": {
+    "clipboard": "^2.0.11",
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
   },
